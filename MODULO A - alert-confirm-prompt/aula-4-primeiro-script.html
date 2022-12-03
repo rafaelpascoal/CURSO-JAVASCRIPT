@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Programa JavaScript</title>
+    <link rel="shortcut icon" href="imagens/javascript-favicon.png" type="image/x-icon">
+    <style>
+        html, body {
+            background-color: gray;
+            color: white;
+        }
+        div#alert, #confirm, #prompt {
+            border: 2px solid blue;
+            background-color: lightblue;
+            color: darkslategray;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando o seu primeiro script</h1>
+    <div id="alert">
+        <h2>window.alert ('')</h2>
+        <p>Comando em JavaScript que cria mensagem (com a informação que o programador quiser) em uma janela independente.</p>
+        <p>Podemos, também, utilizar apenas alert (''), sem o window.</p>
+        <ul>
+            <li>window.alert ('')</li>
+            <li>alert ('')</li>
+        </ul>
+        <p>Lembrando que o conteúdo de HTML criado para a página não aparecerá enquanto o usuário não selecionar o botão OK na janela de alerta.</p>
+    </div>
+    <div id="confirm">
+        <h2>window.confirm ('')</h2>
+        <p>Comando em JavaScript que cria mensagem/pergunta (com a informação que o programador quiser) em uma janela independente.</p>
+        <p>Podemos, também, utilizar apenas confirm (''), sem o window.</p>
+        <ul>
+            <li>window.confirm ('')</li>
+            <li>confirm ('')</li>
+        </ul>
+        <p>Lembrando que o conteúdo de HTML criado para a página não aparecerá enquanto o usuário não selecionar o botão OK na janela de alerta.</p>
+    </div>
+    <div id="prompt">
+        <h2>window.prompt ('')</h2>
+        <p>Comando em JavaScript que cria mensagem/pergunta (com a informação que o programador quiser) em uma janela independente e que exige uma resposta.</p>
+        <p>Podemos, também, utilizar apenas prompt (''), sem o window.</p>
+        <ul>
+            <li>window.prompt ('')</li>
+            <li>prompt ('')</li>
+        </ul>
+        <p>Lembrando que o conteúdo de HTML criado para a página não aparecerá enquanto o usuário não selecionar o botão OK na janela de alerta.</p>
+    </div>
+
+    <img src="imagens/COMANDOS JAVASCRIPT.jpg" alt="comandos">
+
+    <script>
+        window.alert ('Minha primeira mensagem')
+        window.confirm ('Está gostando da aula?')
+        window.prompt ('Qual é o seu nome?')
+    </script>
+
+</body>
+
+
+</html>
+

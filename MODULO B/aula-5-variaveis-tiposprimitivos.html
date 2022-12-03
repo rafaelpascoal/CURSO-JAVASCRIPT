@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos Básicos - Variáveis e Tipos Primitivos</title>
+    <link rel="shortcut icon" href="../MODULO A - alert-confirm-prompt/imagens/javascript-favicon.png" type="image/x-icon">
+
+    <style>
+        html, body {
+            background-color: gray;
+            color: white;
+        }
+        h1 {
+            border: 2px solid black;
+            text-align: center;
+            background-color: white;
+            color: blue;
+            border-radius: 0px 20px 0px 20px;
+            padding: 15px;
+        }
+        h2#recebe {
+            border: 2px solid blue;
+            background-color: lightblue;
+            color: darkslategray;
+            text-align: center;
+            width: 90vw;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 10px;
+            
+        }
+        div#recebe {
+            border: 2px dashed rgb(3, 3, 148);
+            background-color: rgb(99, 151, 168);
+            border-radius: 10px;
+        }
+
+        div#recebe > p {
+            padding: 10px;
+            text-align: justify;
+            color: rgb(28, 43, 43);
+            text-indent: 50px;
+        }
+
+        div#var {
+            border: 2px solid red;
+            background-color: orange;
+            border-radius: 10px;
+            padding: 10px;
+            color: black;
+            margin-top: 10px;
+        }
+        div#var > p {
+            text-align: justify;
+
+        }
+        h2#var {
+            text-align: center;
+        }
+
+        strong#red {
+            color: red;
+            font-size: 2em;
+        }
+        img#var {
+            width: 600px;
+            height: 300px;
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Comandos Básicos do JavaScript - Variáveis e Tipos Primitivos</h1>
+    <div id="recebe">
+        <h2 id="recebe">=</h2>
+        <p>Chamamos o sinal = em JavaScript de <strong>RECEBE</strong> (não usamos o significado de igual como é na matemática);</p>
+    </div>
+    <div id="var">
+        <h2 id="var">VAR</h2>
+        <p>Para facilitar o aprendizado, dizemos que as variáveis (VAR) se assemelham a vagas de estacionamento (espaços em que os carros serão estacionados);</p>
+        <p>Na linguagem JavaScript, além de utilizarmos a palavra <strong id="red">var</strong>, também podemos utilizar a palavra <strong id="red">let</strong></p>
+    </div>
+    <img src="../MODULO A - alert-confirm-prompt/imagens/VARIÁVEIS - VAR LET.jpg" alt="" id="var">
+    
+    <div id="var">
+        <p>Essas variáveis podem receber nomes e valores em números e/ou palavras. Exemplos:</p>
+        <ul>
+            <li>var n1 = 5 (Significa que o var com nome n1 receberá o valor de 5);</li>
+            <li>var n2 = 8.5 (Significa que o var com nome n2 receberá o valor de 8.5);</li>
+            <li>var n3 = 15 (Significa que o var com nome n3 receberá o valor de 15);</li>
+        </ul>
+        <ul>
+            <li>var s1 = "JavaScript"</li>
+            <li>var s2 = 'Curso em Vídeo'</li>
+            <li>var s3 = `Guanabara`</li>
+        </ul>
+        <p>No segundo exemplo (em que os valores são referentes a palavras), percebemos que é possível delimitar um string [sequências de caracteres alfanuméricos (letras, números e/ou símbolos)], ou seja, o que será recebido pelas variáveis de três formas: "" (entre aspas duplas), '' (entre aspas simples ou apóstrofos) e `` (entre acentos crase).</p>
+        <p>O nome de cada variável é conhecido como identificador e esses identificadores devem seguir algumas regras, como:.</p>
+        <ul>
+            <li>Podem começar com <strong id="red">letra</strong>, <strong id="red">$</strong> ou <strong id="red">_</strong>;</li>
+            <li>Não podem começar com <strong id="red">números</strong>;</li>
+            <li>É possível usar <strong id="red">letras</strong> ou <strong id="red">números</strong>;</li>
+            <li>É possivel usar acentos e <strong id="red">símbolos</strong>;</li>
+            <li>Não podem conter <strong id="red">espaços</strong>;</li>
+            <li>Não podem ser <strong id="red">palavras reservadas</strong> (como alert, prompt, confirm, var, etc)</li>
+        </ul>
+        <p>O próximo passo da aula foi abrir o node.js tanto no aplicativo instalado no note quanto no próprio Visual Studio Code (VS Code);</p>
+        <p>No caso do VS Code, clicamos em Menu -> Terminal -> Novo Terminal ou Ctrl + Shift + '</p>
+        <p>Com o terminal aberto, digitar node e clicar em enter para que o recurso node seja disponibilizado.</p>
+        <h2>DICAS</h2>
+        <ul>
+            <li>Maiúsculas e minúsculas fazem diferença (se eu criar uma variável A maiúsculo, devo identificá-las apenas com A maiúsculo e não utilizar o a minúsculo);</li>
+            <li>Tente escolher nomes coerentes para as variáveis (não usar n1, n2, n3 para tudo - utilizar variáveis que facilitem a sua identificação e sua relação com os valores aplicados: var salário para o valor do salário, var idade para o valor idade, e assim por diante);</li>
+        </ul>
+        <h2>VARIÁVEIS PELA VISÃO DO JAVASCRIPT</h2>
+        <ul>
+            <li>NUMBER - 5, 18, -12, 0.5, -15.9, 3.14, 8.0 - Number (Números/variáveis numéricas);</li>
+            <ul>
+                <li>Infinity</li>
+                <li>NaN</li>
+            </ul>
+            <li>STRING - "Google", 'JavaScript', `Maria` - String (pode ser, também, uma cadeia de números: CPF, telefone, RG - pois possuem pontos, traços, são mais complexos que apenas números. Por isso não estão classificados meramente como numbar);</li>
+            <li>BOOLEAN - True, False (Ligado/Desligado, Sim/Não, ou seja, é o tipo de dado que pode ter somente um de dois valores) - Boolean (Valor Boleano ou Valor Lógico)</li>
+        </ul>
+    </div>
+
+    
+</body>
+</html>
